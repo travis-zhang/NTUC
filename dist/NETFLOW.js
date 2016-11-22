@@ -6,10 +6,10 @@ var NTUC = {
     bb:8,
     dp:3,
     unit:1024,
-    level:3,//default 3 MB or Mb
+    level:2,//default 2 MB or Mb
     unitstr:['Byte','KB','MB','GB','TB','PB','EB','ZB','YB','BB','NB','DB'],
     uniflowLevel:function(defv){
-        var level = 3;
+        var level = 2;
         switch(defv){
             case 'Byte':
                 level = 0;
