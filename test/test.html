@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/decimal.min.js"></script>
+    <script src="../dist/NETFLOW.min-0.1.0.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        document.writeln("<H1>Network Traffic Unit Conversion</H1><br>");
+        document.writeln("<H3>the test flow is byte values</H3><br>");
+        var s = 3524632;//byte
+        console.info(NTUC.dynamicFlow(s,false));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+        s = 352463200000;
+        console.info(NTUC.dynamicFlow(s,false));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+        s = 3524632222;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+        s = 3532;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+        s = 32;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+        s = 0;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+        s = 12;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+        s = 35232;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+        s = 352432;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+        s = 352463200000352463200000;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+        s = 352463200000352463200000352432;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+        s = 3524632000003524632000003524323524632222;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+        s = 35246320000035246320000035243235246322221;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,false).flow+" "+NTUC.dynamicFlow(s,false).unit + "<br>");
+
+
+        document.writeln("<H1>Network Traffic Unit Conversion</H1><br>");
+        document.writeln("<H3>the test flow is byte values</H3><br>");
+        var s = 3524632;//byte
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+        s = 352463200000;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+        s = 3524632222;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+        s = 3532;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+        s = 32;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+        s = 0;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+        s = 12;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+        s = 35232;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+        s = 352432;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+        s = 352463200000352463200000;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+        s = 352463200000352463200000352432;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+        s = 3524632000003524632000003524323524632222;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+        s = 35246320000035246320000035243235246322221;
+        console.info(NTUC.dynamicFlow(s,true));
+        document.writeln("value:"+s+"  |  "+NTUC.dynamicFlow(s,true).flow+" "+NTUC.dynamicFlow(s,true).unit + "<br>");
+    </script>
+</body>
+</html>
